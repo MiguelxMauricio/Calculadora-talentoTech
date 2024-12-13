@@ -56,7 +56,5 @@ Este projeto tem como objetivo criar uma **calculadora interativa** com uma inte
 - Envio do repositório GitHub com o código e os slides.
 
 ## Como Usar
-
-1. Clone o repositório para sua máquina local:
-   ```bash
-   git clone https://github.com/MiguelxMauricio/calculadora-talentott.git
+Acesse o link abaixo:
+https://miguelxmauricio.github.io/Calculadora-talentoTech/
