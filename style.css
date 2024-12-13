@@ -1,0 +1,108 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #1d1e2c, #232430);
+    color: #fff;
+}
+
+.calculator {
+    background: #282c34;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    padding: 20px;
+}
+
+.display {
+    background: linear-gradient(145deg, #4b4f64, #363a47);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 3rem;
+    padding: 20px;
+    text-align: right;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    background: linear-gradient(145deg, #3e434f, #303542);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(145deg, #00bfae, #00a396);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.operator {
+    background: linear-gradient(145deg, #ff4747, #ff2424);
+    color: white;
+}
+
+.operator:hover {
+    background: linear-gradient(145deg, #ff7070, #ff3838);
+}
+
+.operator:active {
+    background: linear-gradient(145deg, #ff3636, #ff1c1c);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #777;
+}
+
+/* Animations for transitions */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.calculator {
+    animation: slideIn 0.6s ease-out;
+}
+
